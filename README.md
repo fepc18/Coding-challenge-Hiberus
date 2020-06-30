@@ -1,9 +1,15 @@
 # Coding-challenge-Hiberus
 
-![Solution Architecture](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![](https://github.com/fepc18/Coding-challenge-Hiberus/blob/master/documentation/Solution%20Architect%20Solution.png)
 
 
+Steps for test and review application
 
+1. Install RabbitMQ
+2. Install MongoDb
+3. Run Microservices
+4. Execute Create Checkout from Postman Collection
+5. Wonderful Resul!!
 
 
 Set up the RabbitMQ Broker
