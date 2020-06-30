@@ -25,8 +25,8 @@ public class LogisticMSController {
         BillService = new LogisticService(LogisticRepository);
     }
 
-    @RequestMapping("/bills")
-    public List<Logistic> getCourses() {
+    @RequestMapping("/Logistics")
+    public List<Logistic> getLogistics() {
         return BillService.getLogistics();
     }
 

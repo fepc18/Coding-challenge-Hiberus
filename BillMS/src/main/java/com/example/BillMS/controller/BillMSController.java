@@ -26,7 +26,7 @@ public class BillMSController {
     }
 
     @RequestMapping("/bills")
-    public List<Bill> getCourses() {
+    public List<Bill> getBills() {
         return BillService.getBills();
     }
 
