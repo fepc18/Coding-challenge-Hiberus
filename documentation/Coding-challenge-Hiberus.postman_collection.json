@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "866f355a-3f58-4bba-9710-f5a7a4fd9af9",
+		"name": "Coding-challenge-Hiberus",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Checkout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"clientId\": 1,\r\n    \"date\": \"2020-06-28\",\r\n    \"direction\": \"Carrera  48C Sur Bogotá\",\r\n    \"products\": [\r\n        {\r\n            \"productId\": \"100\",\r\n            \"quantity\":\"4\",\r\n            \"cost\":\"800\"\r\n        },\r\n        {\r\n            \"productId\": \"101\",\r\n            \"quantity\":\"1\",\r\n            \"cost\":\"50\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/checkout/v1/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"checkout",
+						"v1",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Bills",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"clientId\": 1,\r\n    \"date\": \"2020-06-28\",\r\n    \"direction\": \"Carrera  48C Sur Bogotá\",\r\n    \"products\": [\r\n        {\r\n            \"id\": \"100\",\r\n            \"quantity\":4,\r\n            \"cost\":800\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081//Bill/v1/bills",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"",
+						"Bill",
+						"v1",
+						"bills"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Logistics",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"clientId\": 1,\r\n    \"date\": \"2020-06-28\",\r\n    \"direction\": \"Carrera  48C Sur Bogotá\",\r\n    \"products\": [\r\n        {\r\n            \"id\": \"100\",\r\n            \"quantity\":4,\r\n            \"cost\":800\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081//Logistic/v1/Logistics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"",
+						"Logistic",
+						"v1",
+						"Logistics"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
